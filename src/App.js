@@ -19,9 +19,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="banner">
-        {/* <img src="/images/banner.jpg" alt="" /> */}
-      </div>
+      
       {
         register ? (
           <Register />
@@ -35,6 +33,7 @@ function App() {
 function Register(){
   return (
     <div className='register'>
+		<div className="register-title">Đăng ký</div>
       <div className="register-row">
         <div className="label">Tên công ty</div>
         <div className="value">
@@ -93,36 +92,41 @@ function Register(){
 function Home(){
   return (
     <>
-      <div className="section1">
-        <div className='container'>
-          <div className="section-title">
-            <div className="text">VỀ <span>CHÚNG TÔI</span></div>
-          </div>
-          <div className="content">
-            <div className="left">
-              <img src="/images/about.jpg" alt="" />
-            </div>
-            <div className="right">
-              <div className="item">
-                <img src="/images/section2-check.svg" alt="" />
-                <p> Hòa Bình là nhà thầu xây dựng uy tín và chất lượng hàng đầu tại Việt Nam
-                ,đã thành công với nhiều công trình trọng điểm trong và ngoài nước như
-                  Times Square, Estella Heights, Nhà ga mở rộng sân bay quốc tế Tân Sơn Nhất...
-                  </p>
-                </div>
-                <div className="item">
-                <img src="/images/section2-check.svg" alt="" />
-                  <p>Đội ngũ kỹ sư đầy tâm huyết, dày dặn kinh nghiệm . Mạng lưới công ty thành viên : Trang trí mộc Hòa Bình (MBH), Xây dựng nhôm kính Anh Việt (AHA), Sơn Hòa Bình (HBP), cơ điện Jesco Hòa Bình (JHE), Tư vấn Thiết kế Hòa Bình (HBA), xây dựng Hạ tầng Hòa Bình (HBI), Máy móc thiết bị (Matec),...</p>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="section2">
+		<div className="banner">
+			{/* <img src="/images/banner.jpg" alt="" /> */}
+		</div>
+		<div className="section1">
+		<div className='container'>
+			<div className="section-title">
+			<div className="text">VỀ <span>CHÚNG TÔI</span></div>
+			</div>
+			<div className="content">
+			<div className="left">
+				<img src="/images/about.jpg" alt="" />
+			</div>
+			<div className="right">
+				<div className="item">
+				<img src="/images/section2-check.svg" alt="" />
+				<p> Hòa Bình là nhà thầu xây dựng uy tín và chất lượng hàng đầu tại Việt Nam
+				,đã thành công với nhiều công trình trọng điểm trong và ngoài nước như
+					Times Square, Estella Heights, Nhà ga mở rộng sân bay quốc tế Tân Sơn Nhất...
+					</p>
+				</div>
+				<div className="item">
+				<img src="/images/section2-check.svg" alt="" />
+					<p>Đội ngũ kỹ sư đầy tâm huyết, dày dặn kinh nghiệm . Mạng lưới công ty thành viên : Trang trí mộc Hòa Bình (MBH), Xây dựng nhôm kính Anh Việt (AHA), Sơn Hòa Bình (HBP), cơ điện Jesco Hòa Bình (JHE), Tư vấn Thiết kế Hòa Bình (HBA), xây dựng Hạ tầng Hòa Bình (HBI), Máy móc thiết bị (Matec),...</p>
+				</div>
+			</div>
+			</div>
+		</div>
+		</div>
+		<div className="section2">
+		<div className="section2-bg"></div>
         <div className="section-title">
             <div className="text">Mảng <span>hợp tác</span></div>
           </div>
         <div className="section2-content">
+			<div className="container">
           <div className="section2-left">
             <div className="section2-title">Trở thành nhà cung cấp</div>
             <div className="section2-column-content">
@@ -141,7 +145,7 @@ function Home(){
             </div>
           </div>
           <div className="section2-right">
-          <div className="section2-title">Trở thành nhà thầu phụ</div>
+            <div className="section2-title">Trở thành nhà thầu phụ</div>
             <div className="section2-column-content">
               <div className="box">
                 <img src="/images/section2-check.svg" alt="" />
@@ -157,8 +161,117 @@ function Home(){
               </div>
             </div>
           </div>
+		  
+		  </div>
         </div>
-      </div>
+	  	</div>  
+		<div className="section3">
+			<div className="section-title">
+				<div className="text">Câu hỏi <span>thường gặp</span> </div>
+			</div>
+			<div className="section3-content">
+				<div className="container">
+				<div className="section3-content-item">
+				<div className="image">
+					<img src="/images/faq.jpg" alt="" />
+				</div>
+					<div className="title">
+						Hòa Bình nhận giải thưởng Sáng tạo của năm từ Autodesk về BIM
+					</div>
+					<div className="des">
+						Ngày 08/9/2022, tại lễ trao giải cuộc thi Autodesk ASEAN Innovation Awards 2022 khu vực Việt Nam
+					</div>
+				</div>
+				<div className="section3-content-item">
+				<div className="image">
+					<img src="/images/faq.jpg" alt="" />
+				</div>
+					<div className="title">
+						Hòa Bình nhận giải thưởng Sáng tạo của năm từ Autodesk về BIM
+					</div>
+					<div className="des">
+						Ngày 08/9/2022, tại lễ trao giải cuộc thi Autodesk ASEAN Innovation Awards 2022 khu vực Việt Nam
+					</div>
+				</div>
+				<div className="section3-content-item">
+				<div className="image">
+					<img src="/images/faq.jpg" alt="" />
+				</div>
+					<div className="title">
+						Hòa Bình nhận giải thưởng Sáng tạo của năm từ Autodesk về BIM
+					</div>
+					<div className="des">
+						Ngày 08/9/2022, tại lễ trao giải cuộc thi Autodesk ASEAN Innovation Awards 2022 khu vực Việt Nam
+					</div>
+				</div>
+				<div className="section3-content-item">
+					<div className="image">
+						<img src="/images/faq.jpg" alt="" />
+					</div>
+					<div className="title">
+						Hòa Bình nhận giải thưởng Sáng tạo của năm từ Autodesk về BIM
+					</div>
+					<div className="des">
+						Ngày 08/9/2022, tại lễ trao giải cuộc thi Autodesk ASEAN Innovation Awards 2022 khu vực Việt Nam
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div className="section4">
+			<div className="section-title">
+				<div className="text">Tin <span>tức</span> </div>
+			</div>
+			<div className="section3-content">
+				<div className="container">
+				<div className="section3-content-item">
+          <div className="image">
+            <img src="/images/news.jpg" alt="" />
+          </div>
+					<div className="title">
+						Hòa Bình nhận giải thưởng Sáng tạo của năm từ Autodesk về BIM
+					</div>
+					<div className="des">
+						Ngày 08/9/2022, tại lễ trao giải cuộc thi Autodesk ASEAN Innovation Awards 2022 khu vực Việt Nam
+					</div>
+				</div>
+				<div className="section3-content-item">
+          <div className="image">
+            <img src="/images/news.jpg" alt="" />
+          </div>
+					<div className="title">
+						Hòa Bình nhận giải thưởng Sáng tạo của năm từ Autodesk về BIM
+					</div>
+					<div className="des">
+						Ngày 08/9/2022, tại lễ trao giải cuộc thi Autodesk ASEAN Innovation Awards 2022 khu vực Việt Nam
+					</div>
+				</div>
+				<div className="section3-content-item">
+          <div className="image">
+            <img src="/images/news.jpg" alt="" />
+          </div>
+					<div className="title">
+						Hòa Bình nhận giải thưởng Sáng tạo của năm từ Autodesk về BIM
+					</div>
+					<div className="des">
+						Ngày 08/9/2022, tại lễ trao giải cuộc thi Autodesk ASEAN Innovation Awards 2022 khu vực Việt Nam
+					</div>
+				</div>
+				<div className="section3-content-item">
+          <div className="image">
+            <img src="/images/news.jpg" alt="" />
+          </div>
+					<div className="title">
+						Hòa Bình nhận giải thưởng Sáng tạo của năm từ Autodesk về BIM
+					</div>
+					<div className="des">
+						Ngày 08/9/2022, tại lễ trao giải cuộc thi Autodesk ASEAN Innovation Awards 2022 khu vực Việt Nam
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+
     </>
   )
 }
